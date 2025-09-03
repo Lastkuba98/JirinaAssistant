@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 :root {
-  --bg1: #121212;
-  --bg2: #1A1A1A;
+  --bg1: #dbd9d9;
+  --bg2: #bababa;
   --panel: rgba(255,255,255,0.05);
   --text: #E6EEDF;
   --muted: #9E9E9E;
