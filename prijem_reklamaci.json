@@ -3,18 +3,19 @@
     "Příjem pod SN zařízení",
     "Nezáruční baterie\/displeje: s rezervací na počkání (1 hod.), bez rezervace po domluvě s technikem",
     "Ostatní nezáruční - Carry-in (3-5 dnů)",
-    "Záruční - Carry-in nebo mail-in (5-7)"
-    "Běžně dostupné díly: displeje, baterie"
+    "Záruční - Carry-in nebo mail-in (5-7 dnů)"
+    "Díly skladem: displeje, baterie, některé kamery a zadní skla"
   ],
   "iPad":[
     "Příjem pod SN zařízení",
     "Nezáruční - Carry-in (3-5 dnů)",
     "Záruční - Carry-in nebo mail-in (5-7)"
+    "Díly skladem nedržíme"
   ],
   "MacBook Air":[
     "Příjem pod SN zařízení",
     "Carry in (3-5 dnů)"
-    "Na počkání pouze baterie (modely 2013-2017 + M1)"
+    "Díly skladem: baterie (modely 2013-2017 + M1)"
   ],
   "MacBook Pro":[
     "Příjem pod SN zařízení",
