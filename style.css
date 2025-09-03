@@ -95,6 +95,10 @@ h1 {
   transition: background 0.2s ease;
   color: var(--muted);
 }
+
+.list li:last-child {
+  border-bottom: none;
+}
 .list li:hover {
   background: rgba(139,0,111,0.2);
 }
