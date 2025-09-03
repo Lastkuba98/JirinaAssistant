@@ -3,23 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Příjem reklamací</title>
+    <title>Příjem reklamací – kategorie</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="container">
       <h1>Příjem reklamací</h1>
+      <p class="subtitle">Vyber si kategorii zařízení a zobraz detaily</p>
 
-      <label for="category" class="label">Výběr zařízení</label>
-      <select id="category" class="select">
-        <option value="">Vyber kategorii</option>
-      </select>
+      <div class="panel">
+        <label for="category" class="label">Kategorie</label>
+        <select id="category" class="select">
+          <option value="">— Vyber kategorii —</option>
+        </select>
+      </div>
 
       <section id="result" class="card hidden" aria-live="polite">
         <h2 id="categoryTitle" class="title"></h2>
         <ul id="items" class="list"></ul>
       </section>
     </main>
+
+    <footer class="footer">
+      <small>Statická aplikace · Data z <code>prijem_reklamaci.json</code></small>
+    </footer>
 
     <script src="script.js"></script>
   </body>

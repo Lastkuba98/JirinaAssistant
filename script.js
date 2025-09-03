@@ -4,12 +4,10 @@
   const itemsEl = document.getElementById("items");
   const titleEl = document.getElementById("categoryTitle");
 
-  // Helper: render items
   function render(category, data) {
     if (!category || !data[category]) {
-      result.classList.add("hidden");
-      itemsEl.innerHTML = "";
-      titleEl.textContent = "";
+      result.classList.remove("show");
+      setTimeout(() => result.classList.add("hidden"), 300);
       return;
     }
     titleEl.textContent = category;
@@ -20,43 +18,32 @@
       itemsEl.appendChild(li);
     });
     result.classList.remove("hidden");
+    setTimeout(() => result.classList.add("show"), 10);
   }
 
-  // Load JSON and populate select
   fetch("prijem_reklamaci.json", { cache: "no-store" })
     .then((r) => r.json())
     .then((data) => {
-      // Fill dropdown
-      const cats = Object.keys(data);
-      cats.sort((a, b) => a.localeCompare(b, "cs"));
-      cats.forEach((c) => {
-        const opt = document.createElement("option");
-        opt.value = c;
-        opt.textContent = c;
-        select.appendChild(opt);
-      });
+      Object.keys(data)
+        .sort((a, b) => a.localeCompare(b, "cs"))
+        .forEach((c) => {
+          const opt = document.createElement("option");
+          opt.value = c;
+          opt.textContent = c;
+          select.appendChild(opt);
+        });
 
-      // If there's a hash in the URL, preselect
       const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
       if (hash && data[hash]) {
         select.value = hash;
         render(hash, data);
       }
 
-      // On change
       select.addEventListener("change", () => {
         const cat = select.value;
-        // Keep selection in URL for easy sharing
-        if (cat) {
-          location.hash = encodeURIComponent(cat);
-        } else {
-          history.replaceState(null, "", location.pathname);
-        }
+        if (cat) location.hash = encodeURIComponent(cat);
+        else history.replaceState(null, "", location.pathname);
         render(cat, data);
       });
-    })
-    .catch((err) => {
-      console.error("Nepodařilo se načíst JSON:", err);
-      alert("Nepodařilo se načíst data. Zkontroluj, že je soubor 'prijem_reklamaci.json' ve stejné složce.");
     });
 })();

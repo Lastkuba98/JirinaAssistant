@@ -1,43 +1,43 @@
 {
-  "iPhone": [
+  "iPhone":[
     "Příjem pod SN",
-    "Nezáruční baterie/displeje: s rezervací na počkání (1 hod.), bez rezervace po domluvě s technikem",
+    "Nezáruční baterie\/displeje: s rezervací na počkání (1 hod.), bez rezervace po domluvě s technikem",
     "Ostatní nezáruční - Carry-in (3-5 dnů)",
     "Záruční - Carry-in nebo mail-in (5-7)"
   ],
-  "iPad": [
+  "iPad":[
     "Příjem pod SN",
     "Nezáruční - Carry-in (3-5 dnů)",
     "Záruční - Carry-in nebo mail-in (5-7)"
   ],
-  "MacBook Air": [
+  "MacBook Air":[
     "Příjem pod SN",
     "Carry in (3-5 dnů)"
   ],
-  "MacBook Pro": [
+  "MacBook Pro":[
     "Příjem pod SN",
     "Carry in (3-5 dnů)",
     "! BATERIE nezáruční - mail-in"
   ],
-  "Apple Watch": [
+  "Apple Watch":[
     "Příjem pod SN",
     "Mail-in (5-7 dnů)",
     "Pro Battery price must být kondice baterie pod 80% nebo hlásit servis"
   ],
-  "Apple Pencil": [
+  "Apple Pencil":[
     "Příjem pod SN",
     "Carry-in (3-5 dnů)"
   ],
-  "AirPods": [
+  "AirPods":[
     "Příjem pod SN",
-    "AirPods 2/3/4/Pro - Carry-in (3-5 dnů)",
+    "AirPods 2\/3\/4\/Pro - Carry-in (3-5 dnů)",
     "AirPods Max - Mail in (5-7 dnů), přijímat bez náušníků a bez pouzdra"
   ],
-  "EarPods": [
+  "EarPods":[
     "Příjem pod VS faktury",
     "Carry-in (3-5 dnů)"
   ],
-  "ACC": [
+  "ACC":[
     "Příjem pod SN zařízení se kterým je používáno (iPhone, iPad, Mac…)",
     "Kryty, kabely, řemínky apod."
   ]
