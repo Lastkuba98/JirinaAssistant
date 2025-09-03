@@ -53,6 +53,7 @@ h1 {
   background: var(--bg2);
   color: var(--text);
   font-size: 16px;
+  text-align: middle;
 }
 .select:focus {
   border-color: var(--accent);
