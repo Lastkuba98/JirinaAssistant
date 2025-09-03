@@ -1,12 +1,12 @@
 * { box-sizing: border-box; }
 :root {
-  --bg1: #dbd9d9;
-  --bg2: #bababa;
-  --panel: rgba(255,255,255,0.05);
-  --text: #E6EEDF;
-  --muted: #9E9E9E;
+  --bg1: #ffffff;
+  --bg2: #f4f4f4;
+  --panel: rgb(244 244 244);
+  --text: #d7007f;
+  --muted: #2c2c2c;
   --accent: #8B006F;
-  --border: rgba(255,255,255,0.1);
+  --border: rgb(29 29 27 / 24%);
 }
 body {
   margin: 0;
